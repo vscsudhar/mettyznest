@@ -14,7 +14,7 @@ import 'package:path/path.dart' as path;
 
 class AddPetFormViewModel extends BaseViewModel with NavigationMixin {
   AddPetFormViewModel() {
-    checkFilePermission();
+    // checkFilePermission();
   }
 
   final PermissionServiceService _permissionService =

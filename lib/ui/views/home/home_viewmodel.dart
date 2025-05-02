@@ -12,8 +12,8 @@ import 'package:stacked_services/stacked_services.dart';
 
 class HomeViewModel extends BaseViewModel with NavigationMixin {
   HomeViewModel() {
-    getDetails();
     checkFilePermission();
+    getDetails();
   }
   final _dialogService = locator<DialogService>();
   final _bottomSheetService = locator<BottomSheetService>();

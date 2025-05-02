@@ -4,11 +4,12 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 class PermissionServiceService {
-  PermissionServiceService() {
-    final _dialogService = locator<DialogService>();
-  }
+  // PermissionServiceService() {
+    final DialogService _dialogService = locator<DialogService>();
 
-  late DialogService _dialogService;
+  // }
+
+  // late DialogService _dialogService;
 
   Future<bool> requestFilePermission(Permission permission) async {
     AndroidDeviceInfo build = await DeviceInfoPlugin().androidInfo;

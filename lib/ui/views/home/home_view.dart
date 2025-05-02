@@ -19,7 +19,7 @@ class HomeView extends StackedView<HomeViewModel> {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Column(children: [
-              viewModel.isLoading!
+              viewModel.isBusy
                   ? const Expanded(child: Center(child: CircularProgressIndicator()))
                   : Expanded(
                       child: Column(
